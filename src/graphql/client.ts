@@ -23,7 +23,7 @@ export const link = attachVariablesLink.concat(
     credentials: "include",
     uri: getApiUrl(),
     fetch: createFetch(),
-  }),
+  }) as any,
 );
 
 export const apolloClient = new ApolloClient({
